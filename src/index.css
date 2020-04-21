@@ -31,10 +31,18 @@ code {
 }
 
 .mdl-card-small {
-  height: 100px;
+  /* height: 50px; */
   width: 100px;
+  border-radius: 15px 50px;
+  background-color: green;
+  color: #fff;
+  margin: 5px;
 }
 
 h1 {
   font-family: 'Hammersmith One';
+}
+
+.mdl-grid {
+  padding: 20px;
 }

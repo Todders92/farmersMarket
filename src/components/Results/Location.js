@@ -6,9 +6,12 @@ function Location(props) {
   console.log("props: ", props)
   return (
     <React.Fragment>
-      <h3>Market: {props.location}</h3>
-      <p>Hours: {props.hours}</p>
-      <p>Booth: {props.booth}</p>
+      <div className="mdl-card">
+        <h3>Today's Market: {props.location}</h3>
+        <p>Hours: {props.hours}</p>
+        <p>Booth: {props.booth}</p>
+      </div>
+      
     </React.Fragment>
   );
 }

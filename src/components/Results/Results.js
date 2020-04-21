@@ -22,7 +22,12 @@ function Results(props) {
       <h3>Market: {currentLocation.location}</h3>
       <p>Hours: {currentLocation.hours}</p>
       <p>Booth: {currentLocation.booth}</p>
+      <br />
+      <br />
+      <h4>Seasonal Produce: </h4>
+      <div className="mdl-grid">
       {produce}
+      </div>
     </React.Fragment>
   )
 }
