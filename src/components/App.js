@@ -31,6 +31,7 @@ class App extends React.Component {
         <React.Fragment>
             <NewDateForm weekdayChange={this.weekDayChangeHandler} monthChange={this.monthChangeHandler}/>
             <Header />
+            <br />
             <Results weekday={this.state.weekday} month={this.state.month} /> 
         </React.Fragment>
     )
