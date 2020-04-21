@@ -30,9 +30,9 @@ code {
   color: #fff;
 }
 
-.mdl-card-small {
+.product-div {
   /* height: 50px; */
-  width: 100px;
+  width: 130px;
   border-radius: 15px 50px;
   background-color: green;
   color: #fff;
