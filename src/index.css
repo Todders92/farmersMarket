@@ -1,4 +1,5 @@
 body {
+  text-align: center;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +11,18 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.demo-card-wide.mdl-card {
+  float: left;
+  margin: auto;
+  text-align: center;
+}
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  /* height: 100px; */
+  background-color: green;
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
 }

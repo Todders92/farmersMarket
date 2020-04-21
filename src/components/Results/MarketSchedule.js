@@ -30,6 +30,12 @@ const marketSchedule = [
      hours: "2:00pm - 6:00pm",
      booth: "6D"
   },
+   {  
+   day: "Friday",
+   location: "Downtown Gresham",
+   hours: "2:00pm - 6:00pm",
+   booth: "7B"
+  },
   {  
      day: "Saturday",
      location: "Beaverton",

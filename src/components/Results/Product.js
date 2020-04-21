@@ -5,7 +5,9 @@ import PropTypes from "prop-types";
 function Product(props) {
   return (
     <React.Fragment>
-      <h3>{props.name}</h3>
+      <div class="mdl-card">
+        <p>{props.name}</p>
+      </div>
     </React.Fragment>
   );
 }
