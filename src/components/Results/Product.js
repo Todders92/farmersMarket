@@ -1,19 +1,18 @@
 import React from 'react';
-import availableProduce from './SeasonalProduce';
 import PropTypes from "prop-types";
 
 function Product(props) {
   return (
     <React.Fragment>
-      <div class="mdl-card">
-        <p>{props.name}</p>
-      </div>
+
+        <h5>{props.name}</h5>
+
     </React.Fragment>
   );
 }
   
-// Product.propTypes = {
-//   name: PropTypes.string
-// };
+Product.propTypes = {
+  name: PropTypes.string
+};
 
 export default Product;

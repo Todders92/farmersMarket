@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Hammersmith+One|Montserrat&display=swap');
+
 body {
+  font-family: 'Montserrat';
   text-align: center;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -25,4 +28,13 @@ code {
 }
 .demo-card-wide > .mdl-card__menu {
   color: #fff;
+}
+
+.mdl-card-small {
+  height: 100px;
+  width: 100px;
+}
+
+h1 {
+  font-family: 'Hammersmith One';
 }

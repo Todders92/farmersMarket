@@ -1,6 +1,5 @@
 import React from 'react';
 import Product from './Product';
-import Location from './Location';
 import availableProduce from './SeasonalProduce';
 import marketSchedule from './MarketSchedule';
 
