@@ -1,36 +1,31 @@
 import React from 'react';
+import Product from './Product';
+import Location from './Location';
 import availableProduce from './SeasonalProduce';
 import marketSchedule from './MarketSchedule';
 
 function Results(props) {
+
+  // Get current seasonal produce    
+  let produce = null;
+  let productObj = availableProduce.filter(productObj => productObj.month === props.month);
+  produce = productObj[0].selection.map((product, index) => (
+    <Product name={product} key={index} />
+  ));
+
+  // Get location by month
+  let currentLocation = null;
+  let locationObj = marketSchedule.filter(locationObj => locationObj.day === props.weekday);
+  currentLocation = locationObj[0];
+
   return (
     <React.Fragment>
-      {/* <LocationResults weekday={props.weekday} /> */}
-      {availableProduce.map((productList) => {
-        if(productList.month === props.month) {
-          productList.selection.forEach(product => {
-            return <p>{product}</p>
-          });
-        }
-      })}
-      {/* <Products month={props.month}/> */}
+      <h3>Market: {currentLocation.location}</h3>
+      <p>Hours: {currentLocation.hours}</p>
+      <p>Booth: {currentLocation.booth}</p>
+      {produce}
     </React.Fragment>
   )
 }
 
 export default Results;
-
-
-// function TicketList(){
-//   return (
-//     <React.Fragment>
-//       <hr/>
-//       {masterTicketList.map((ticket, index) =>
-//         <Ticket names={ticket.names}
-//           location={ticket.location}
-//           issue={ticket.issue}
-//           key={index}/>
-//       )}
-//     </React.Fragment>
-//   );
-// }
