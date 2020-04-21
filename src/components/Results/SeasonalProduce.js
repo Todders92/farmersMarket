@@ -1,3 +1,5 @@
+import React from "react";
+
 const availableProduce = [  
   {  
      month: "January",
@@ -266,3 +268,5 @@ const availableProduce = [
      ]
   }
 ];
+
+export default availableProduce;

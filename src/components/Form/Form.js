@@ -5,7 +5,7 @@ function NewDateForm(props) {
     <React.Fragment>
       <form>
         <label for="Weekday">Day of the Week:</label>
-        <select id="Weekday" name="Weekday">
+        <select id="Weekday" name="Weekday" onChange={props.weekdayChange}>
           <option value="Monday">Monday</option>
           <option value="Tuesday">Tuesday</option>
           <option value="Wednesday">Wednesday</option>
@@ -15,7 +15,7 @@ function NewDateForm(props) {
           <option value="Sunday">Sunday</option>
         </select>
         <label for="Month">Current Month:</label>
-        <select id="Month" name="Month">
+        <select id="Month" name="Month" onChange={props.monthChange}>
           <option value="January">January</option>
           <option value="February">February</option>
           <option value="March">March</option>
@@ -29,7 +29,6 @@ function NewDateForm(props) {
           <option value="November">November</option>
           <option value="December">December</option>
         </select>
-        <button type="submit">Search Market!</button>
       </form>
     </React.Fragment>
   )
